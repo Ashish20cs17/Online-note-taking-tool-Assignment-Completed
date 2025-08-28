@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 📝 Online Notebook App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Notebook Screenshot](Notebook.png)
 
-## Available Scripts
+## Tool Assigned
+**Tool Name:** Notebook  
+**Description:** Online note-taking tool.  
 
-In the project directory, you can run:
+## Features
+- Create and edit notes using a **rich text editor** (Jodit Editor).  
+- Save notes **locally** using LocalStorage or optionally via a **backend API**.  
+- Notes support **bold, italic, underline, colors, lists, links**, and more.  
+- Filter notes by **date**.  
+- Random **quote display** integrated via a free API (`https://api.quotable.io/random`).  
+- Fully **responsive** and visually appealing design for **mobile and desktop**.  
 
-### `npm start`
+## Requirements Implemented
+- Built with **React.js**, HTML, and CSS.  
+- LocalStorage acts as a **simulated API** for persisting notes.  
+- Optionally, a **Node.js backend** can be used for CRUD operations.  
+- Clean, modular, and commented code.  
+- Fully responsive design with modern UI/UX.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
+1. **Add a Note:** Click **`+ New`** to create a new note.  
+2. **Edit Note:** Use the Jodit rich text editor to format your note.  
+3. **Save Note:** Click **Save** — the note persists in LocalStorage (or backend) and displays immediately.  
+4. **Delete Note:** Remove any note from the list.  
+5. **Filter Notes:** Choose a date to filter notes by creation date.  
+6. **Random Quotes:** The QuoteBox displays a motivational quote from the API.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- **Frontend:** React.js, Jodit Editor, HTML, CSS  
+- **Storage / API:** LocalStorage (simulated API) or Node.js backend (optional)  
+- **API Integration:** Fetch API for random quotes  
 
-### `npm test`
+## Backend Setup (Node.js)
+If you want to use a backend instead of LocalStorage:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Create a `.env` file with necessary variables (if needed).  
+2. Run the Node.js backend:
+```bash
+cd backend
+npm install
+node server.js
+## Frontend Setup
+npm install
+npm start (frontend react)
