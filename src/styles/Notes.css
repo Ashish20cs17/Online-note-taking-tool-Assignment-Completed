@@ -1,0 +1,38 @@
+/* Quotes */
+.quote-box {
+  padding: 12px 14px;
+  background: linear-gradient(90deg, #ffffff, #fbfdff);
+  border-radius: 8px;
+  border: 1px solid #f0f4ff;
+  box-shadow: 0 3px 10px rgba(9,10,21,0.02);
+}
+.quote-box h3 { margin: 0 0 6px 0; font-size: 15px; }
+.quote-text { margin: 0; font-style: italic; transition: opacity 0.5s ease; opacity: 1; }
+.quote-text.fade { opacity: 0.15; transform: translateY(-2px); }
+
+/* Note Editor */
+.note-editor .jodit-workplace { min-height: 260px; }
+.note-editor { display:flex; flex-direction:column; gap: 8px; }
+.editor-actions { display:flex; gap: 8px; justify-content:flex-end; margin-top:8px; }
+
+/* Notes List */
+.notes-list { display:flex; flex-direction:column; gap: 8px; max-height: 64vh; overflow:auto; padding-right:6px; }
+.note-item { display:flex; align-items:center; justify-content:space-between; padding: 10px; border-radius:8px; border: 1px solid #f1f3f6; cursor: default; }
+.note-item:hover { background: #fbfcff; }
+.note-left { flex:1; min-width:0; cursor:pointer; }
+.note-preview { font-weight: 600; color: #111827; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.note-date { font-size:12px; color: var(--muted); margin-top:4px; }
+
+/* small screens */
+@media (max-width: 900px) {
+  .main-content { grid-template-columns: 1fr; padding: 12px; }
+  .right-col { order: 2; }
+  .left-col { order: 1; margin-bottom: 12px; }
+  .editor-area { min-height: 50vh; }
+}
+
+/* Jodit-specific tweaks (better mobile) */
+.jodit-wysiwyg { min-height: 220px !important; }
+
+/* helper */
+.muted { color: var(--muted); }

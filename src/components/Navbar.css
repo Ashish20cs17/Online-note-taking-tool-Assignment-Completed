@@ -1,0 +1,54 @@
+/* Navbar.css */
+
+.navbar {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  padding: 12px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.nav-right span {
+  font-weight: 600;
+  color: #ffe97f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-right {
+    font-size: 0.9rem;
+  }
+}

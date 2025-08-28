@@ -1,0 +1,87 @@
+/* NoteEditor.css */
+
+/* Main editor wrapper */
+.note-editor {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.note-editor:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Empty state */
+.editor-empty {
+  background: #f9fafc;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Editor actions (buttons) */
+.editor-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.btn.primary:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn.danger {
+  background: #f87171;
+  color: white;
+}
+
+.btn.danger:hover {
+  background: #ef4444;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .note-editor {
+    padding: 12px;
+  }
+
+  .editor-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
